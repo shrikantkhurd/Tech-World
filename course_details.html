@@ -16,7 +16,7 @@
   <title>Tech-Wolrd</title>
   <style>
     .banner-image {
-      height:60vh;
+      height:70vh;
       min-height:300px;
       background-image: url("image/slider.png");
       background-size: cover;
@@ -72,7 +72,12 @@
     </div>
   </div>
   <!-- Banner image end -->
-
+                                 
+<div class=" d-flex justify-content-center align-items-center p-md-3">
+    <div class="content text-center">
+      <h2 style="color: black; font-weight: 900; font-family: Merriweather;">- - - Course Detail - - -</h2>
+    </div>
+</div>
 
   <!-- Blog Entries Column Start-->
   <div class="container">
@@ -165,63 +170,11 @@
 
       </div>
     </div>
-  
+</div>
 
   <!--  Card layout end -->
 
-  <!---Comment Section start--->
-
-  <div class="row" style="margin-top: -8%">
-    <div class="col-md-8">
-      <div class="card my-4">
-        <h5 class="card-header">Leave a Comment:</h5>
-        <div class="card-body">
-          <form name="Comment" method="post">
-            <input type="hidden" name="csrftoken" value="<?php echo htmlentities($_SESSION['token']); ?>" />
-            <div class="form-group">
-              <input type="text" name="name" class="form-control" placeholder="Enter your fullname" required>
-            </div>
-
-            <div class="form-group">
-              <input type="email" name="email" class="form-control" placeholder="Enter your Valid email" required>
-            </div>
-
-
-            <div class="form-group">
-              <textarea class="form-control" name="comment" rows="3" placeholder="Comment" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" name="submit">Submit</button>
-          </form>
-        </div>
-      </div>
-
-      <!---Comment Display Section --->
-
-      <?php 
-$sts=1;
-$query=mysqli_query($con,"select name,comment,postingDate from  tblcomments where postId='$pid' and status='$sts'");
-while ($row=mysqli_fetch_array($query)) {
-?>
-      <div class="media mb-4">
-        <img class="d-flex mr-3 rounded-circle" src="images/usericon.png" alt="">
-        <div class="media-body">
-          <h5 class="mt-0">
-            <?php echo htmlentities($row['name']);?> <br />
-            <span style="font-size:11px;"><b>at</b>
-              <?php echo htmlentities($row['postingDate']);?>
-            </span>
-          </h5>
-
-          <?php echo htmlentities($row['comment']);?>
-        </div>
-      </div>
-      <?php } ?>
-
-    </div>
-  </div>
-  </div>
-</div>
-  <!---Comment Section end--->
+  
 
   <!-- footer start -->
   <div>
