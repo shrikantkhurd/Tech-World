@@ -14,19 +14,11 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/footer.css">
   <title>Tech-Wolrd</title>
-  <style>
-    .banner-image {
-      height:70vh;
-      min-height:300px;
-      background-image: url("image/FreeCourseSlider2.png");
-      background-size: cover;
-
-    }
-  </style>
+  
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark  navbar fixed-top p-md-3">
+  <nav class="navbar navbar-expand-lg navbar-dark  navbar fixed-top p-md-1">
     <div class="container">
       <!-- mb-0 h1 -->
       <a class="navbar-brand " href="index.html">
@@ -42,9 +34,7 @@
           <li class="nav-item active">
             <a class="nav-link" href="/Tech-World/">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#card">Our Service</a>
-          </li>
+      
           <li class="nav-item">
             <a class="nav-link" href="/Tech-World/freeCourse.html">Free Courses</a>
           </li>
@@ -64,10 +54,14 @@
   </nav>
 
   <!-- Banner image start -->
-  <div class="banner-image d-flex justify-content-center align-items-center">
-
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
     
-  </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="image/FreeCourseSlider2.png" class="d-block w-100" alt="...">
+            
+        </div>
+      </div>
   <!-- Banner image end -->
                                  
 <div class=" d-flex justify-content-center align-items-center p-md-3">
@@ -88,7 +82,7 @@
         <div class="card mb-4">
           <!-- <img class="card-img-top" src="image/slider.png" alt="Jasprit Bumrah ruled out of England T20I series due to injury"> -->
           <div class="card-body">
-            <h3 class="card-title">Python For Data Science</h3>
+            <h3 class="card-title" style="font-size: 19px;">Python For Data Science</h3>
             <p>
               Here we will see two programs to add two numbers, In the first program we specify the value of both the
               numbers in the program itself. The second programs takes both the numbers (entered by user) and prints the
@@ -101,7 +95,7 @@
 
         </div>
         <div>
-        <a href="freeCourse.html" class="btn btn-outline-danger " role="button" aria-pressed="true" >Back</a>
+        <a href="freeCourse.html" class="btn btn-outline-danger btn-sm " role="button" aria-pressed="true" >Back</a>
      </div>
       <br>
         <!-- Pagination -->
@@ -227,17 +221,7 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
 
-  <script>
-    var nav = document.querySelector('nav');
-
-    window.addEventListener('scroll', function () {
-      if (window.pageYOffset > 100) {
-        nav.classList.add('bg-dark', 'shadow');
-      } else {
-        nav.classList.remove('bg-dark', 'shadow');
-      }
-    });
-  </script>
+  
 </body>
 
 </html>
