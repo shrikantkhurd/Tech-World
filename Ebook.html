@@ -27,7 +27,7 @@
         .banner-image{
             height:70vh;
             min-height:300px;
-            background-image: url("image/ebook.jpg");
+            background-image: url("");
             background-size: cover;
             
         }
@@ -35,7 +35,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark  navbar fixed-top p-md-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar fixed-top p-md-1">
        <div class="container"><!-- mb-0 h1 -->
         <a class="navbar-brand " href="index.html" >
             <img src="image/brand-logo.png" width="120" height="30" alt="" loading="lazy"></a>
@@ -59,9 +59,7 @@
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#card">Our Service</a>
-              </li>
+           
             <li class="nav-item">
                 <a class="nav-link" href="/Tech-World/freeCourse.html">Free Courses</a>
               </li>
@@ -81,12 +79,17 @@
     </nav>
 
     <!-- Banner image start -->
-    <div class="banner-image d-flex justify-content-center align-items-center">
-       
-        <div class="content text-center">
-            <h2 style="color: black; font-weight: 900;">Welcome to Tech-World</h2>
-            <p style="font-size: 25px;">E-Book Library.</p>
-        </div>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+          
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="image/ebook.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block ">
+                    <h2 style="color: black; font-weight: 900;">Welcome to Tech-World</h2>
+                    <p style="font-size: 25px;">E-Book Library</p>
+                      
+                  </div>
+              </div>
     </div>
     <!-- Banner image end -->
     
@@ -105,36 +108,36 @@
       <div class="card mb-4">
    <!-- <img class="card-img-top" src="image/slider.png" alt="Jasprit Bumrah ruled out of England T20I series due to injury"> -->
         <div class="card-body">
-          <h3 class="card-title" style="font-size: 23px;">Spring framework and spring boot</h3>
+          <h3 class="card-title" style="font-size: 19px;">Spring framework and spring boot</h3>
        
-          <a href="files/addition.pdf" target="black" class="btn btn-outline-success" role="button" aria-pressed="true">Download</a>
+          <a href="files/addition.pdf" target="black" class="btn btn-outline-success btn-sm" role="button" aria-pressed="true">Download</a>
         </div>
         
       </div>
       <div class="card mb-4">
         <!-- <img class="card-img-top" src="image/slider.png" alt="Jasprit Bumrah ruled out of England T20I series due to injury"> -->
              <div class="card-body">
-               <h3 class="card-title" style="font-size: 23px;">java programming for beginners</h3>
+               <h3 class="card-title" style="font-size: 19px;">java programming for beginners</h3>
             
-               <a href="files/addition.pdf" target="black" class="btn btn-outline-success" role="button" aria-pressed="true">Download</a>
+               <a href="files/addition.pdf" target="black" class="btn btn-outline-success btn-sm" role="button" aria-pressed="true">Download</a>
              </div>
              
            </div>
            <div class="card mb-4">
             <!-- <img class="card-img-top" src="image/slider.png" alt="Jasprit Bumrah ruled out of England T20I series due to injury"> -->
                  <div class="card-body">
-                   <h3 class="card-title" style="font-size: 23px;">javascript book</h3>
+                   <h3 class="card-title" style="font-size: 19px;">javascript book</h3>
                 
-                   <a href="files/addition.pdf" target="black" class="btn btn-outline-success" role="button" aria-pressed="true">Download</a>
+                   <a href="files/addition.pdf" target="black" class="btn btn-outline-success btn-sm" role="button" aria-pressed="true">Download</a>
                  </div>
                  
                </div>
                <div class="card mb-4">
                 <!-- <img class="card-img-top" src="image/slider.png" alt="Jasprit Bumrah ruled out of England T20I series due to injury"> -->
                      <div class="card-body">
-                       <h3 class="card-title" style="font-size: 23px;">Python flask E-book</h3>
+                       <h3 class="card-title" style="font-size: 19px;">Python flask E-book</h3>
                     
-                       <a href="files/addition.pdf" target="black" class="btn btn-outline-success" role="button" aria-pressed="true">Download</a>
+                       <a href="files/addition.pdf" target="black" class="btn btn-outline-success btn-sm" role="button" aria-pressed="true">Download</a>
                      </div>
                      
                    </div>
@@ -276,16 +279,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script>
-        var nav= document.querySelector('nav');
-
-        window.addEventListener('scroll', function() {
-        if(window.pageYOffset>100){
-            nav.classList.add('bg-dark','shadow');
-        }else{
-            nav.classList.remove('bg-dark','shadow');
-        }
-    });
-    </script>
+   
   </body>
 </html>
