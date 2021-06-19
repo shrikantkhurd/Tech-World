@@ -135,7 +135,8 @@
                      
                    </div>
 
-<ul class="pagination justify-content-center mb-4" id="page">
+          <div class="container pagedemo">
+<ul class="pagination justify-content-center mb-4" >
     <li class="page-item"><a href="?pageno=1" class="page-link">First</a></li>
     <li class="disabled page-item">
         <a href="#" class="page-link">Prev</a>
@@ -145,7 +146,7 @@
     </li>
     <li class="page-item"><a href="?pageno=1" class="page-link">Last</a></li>
 </ul>
-   
+          </div>
 
   
 
@@ -178,34 +179,7 @@
       <!-- Categories Widget -->
       
 
-      <!-- Side Widget -->
-      <div class="card my-4 demo">
-        <h5 class="card-header">Recent uploaded E-Books</h5>
-        <div class="card-body">
-          <ul class=" mb-0">
-            <li><a href="news-details.php?nid=<?php echo htmlentities($row['pid'])?>">
-              <?php echo htmlentities($row['posttitle']);?>
-              Spring framework and spring boot</a></li>
-
-            <li>
-              <a href="news-details.php?nid=<?php echo htmlentities($row['pid'])?>">
-                <?php echo htmlentities($row['posttitle']);?>
-                java programming for beginners
-              </a>
-            </li>
-            <li>
-              <a href="news-details.php?nid=7">javascript book.</a>
-            </li>
-            <li>
-              <a href="news-details.php?nid=7">Python flask E-book</a>
-            </li>
-            <li>
-              <a href="news-details.php?nid=7">write a javascript program of Addition of two numbers</a>
-            </li>
-            <?php } ?>
-          </ul>
-        </div>
-      </div>
+      
 
     </div>
   </div>
